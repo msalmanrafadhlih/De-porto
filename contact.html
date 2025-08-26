@@ -1,162 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MochsaL</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="asset/img/Logo-pin2.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
-      rel="stylesheet"
-    />
-	<style>
-      body, html {
-        height: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	heigt: 100vh;
-      } 
-      @media (max-width: 1024px) { 
-	      body { 
-		      height: fit-content; 
-		      padding-top: 300px; 
-	      }
-      }
-	</style>
-  </head>
-  <body>
-    <!-- MAIN -->
-      <img id="toggle" role="button" tabindex="0" src="asset/img/theme/Darks.svg" alt="toggle theme">
-      <!-- MENU NAVBAR  -->
-      <nav class="navbar">
-        <div id="hamburger" role="button" tabindex="0">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-
-      <!-- TITTLE LAYER -->
-      <div class="title-layer" role="banner">
-        <div class="bg"></div>
-        <div class="stacks-inner" style="gap: 20px;" alt="stacks-inner">
-          <h1>Contact </h1>
-          <h1>Contact </h1>
-          <h1>Contact </h1>
-          <h1>Contact </h1>
-          <h1>Contact </h1>
-        </div>
-      </div> 
-	<section class="contact">	      
-		<div class="contact-item">
-		  <div class="role view">
-		    <p>CONTACT ME</p>
-		    <hr />
-		  </div>
-		  <p>Providing a variety of creative solutions to help take your brand to the next level. Wheter you need graphic designs. Web development. UI/UX or something in between, we've got you covered with services tailored to fit your business properly.</p>
-		  <span>Bringin creatiive visions to life through design - Available for freelance projects and collaborations</span>
-		</div>
-
-		<form action="#" method="post" class="contact-form">
-		  <div class="form">
-			<div class="form-group">
-		      		<textarea type="text" id="name" name="name" maxlength="50" class="custom-input" placeholder="NAME" required></textarea> 
-			</div>
-			<div class="form-group">
-		      		<textarea type="number" id="phone" name="phone" maxlength="50" class="custom-input" placeholder="PHONE" required></textarea>
-			</div>
-			<div class="form-group">
-				<textarea type="email" id="email" name="email" maxlength="30" class="custom-input" placeholder="EMAIL" required></textarea>
-			</div>
-		  </div>
-
-		  <div class="form">
-		    <div class="form-group">
-		      	<textarea id="message" name="message" class="custom-input" placeholder="MESSAGE" required></textarea>				
-			    <div class="cta send" type="submit" tabindex="0">
-			      <p>Send</p>
-			      <img src="asset/img/split.svg" alt="Split" inverted>
-			    </div>  
-		    </div>
-		  </div>
-		</form>
-         </section>
-
-
-
-      <!-- MENU LAYER -->
-      <div id="menu" class="menu">
-        <!-- MENU TOP -->
-        <nav class="top">
-          <a id="hamburger-menu" tabindex="0">X Close</a>
-          <img src="asset/img/Logo.svg" class="logo" height="15" alt="logo" inverted loading="lazy"/>
-          <a href="#contact">Get in touch</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MochsaL</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="asset/img/Logo-pin2.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body,
+            html {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100vh;
+            }
+            @media (max-width: 1024px) {
+                body {
+                    height: fit-content;
+                    padding-top: 300px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- MAIN -->
+        <img
+            id="toggle"
+            role="button"
+            tabindex="0"
+            src="asset/img/theme/Darks.svg"
+            alt="toggle theme"
+        />
+        <!-- MENU NAVBAR  -->
+        <nav class="navbar">
+            <div id="hamburger" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-      <!-- MENU MID -->
-        <div class="mid">
-          <div class="mid-item">
-            <div class="nav">
-              <a href="index.html">HOMe`</a>
-              <a href="project.html">PROJe`CT</a>
-              <a href="about.html">a`BOUT</a>
-              <a href="contact.html" tabindex="-1" disabled>CONTa`CT</a>
-            </div>
-            <div class="theme">
-              <p>Theme:</p>
-              <img id="theme" role="button" tabindex="0" src="asset/img/moon.svg" loading="lazy" alt="Dark theme btn">
-            </div>
-          </div>
-          <div class="mid-img">
-            <img src="asset/img/menu/IMG1.svg" loading="lazy" alt="Image Menu">
-          </div>
-        </div>
-        <div class="mid2">
-          <div class="resume"></div>
-          <div class="mid-menu"></div>
-        </div>
-        <!-- HIDDEN -->
-        <div class="menu-hidden">
-          <ul class="menu-hidden-item gap">
-            <li class="rotate"><a href="index.html">Home</a></li>
-            <li class="rotate"><a href="project.html">Project</a></li>
-            <li class="rotate"><a href="about.html">About</a></li>
-            <li class="rotate"><a href="contact.html" tabindex="-1" disabled>Contact</a></li>
-          </ul>
-          <div class="menu-hidden-item">
-            <div class="btm-social" role="button">
-              <a href="https://www.linkedin.com/in/msalmanrafadhlih/" target="_blank" rel="noreferrer"><img src="asset/img/linkedIn.svg" width="15px" alt="LinkedIn" loading="lazy" inverted></a>
-            </div>
-            <div class="btm-social" role="button">
-              <a href="https://x.com/Rafadhlih" target="_blank" rel="noreferrer"><img src="asset/img/twitter x.svg" width="15px" alt="twitter" loading="lazy" inverted></a>
-            </div>
-            <div class="btm-social" role="button">
-              <a href="https://msalmanrafadhlih.github.io/redirect-pages/mygithub.html" target="_blank" rel="noreferrer"><img src="asset/img/github2.svg" width="15px" alt="github" loading="lazy" inverted></a>
-            </div>
-            <div class="btm-social" role="button">
-              <a href="asset/download/img12.webj" rel="noreferrer" download><img src="asset/img/cv.svg" width="20px" alt="resume" loading="lazy" inverted></a>
-            </div>
-          </div>
-        </div>
-      <!-- BOTTOM -->
-        <div class="bottom">
-          <div class="bottom-item">
-                <a class="resume" href="asset/download/img12.webp" download>Download resume
-                  <img src="asset/img/link.svg" height="15px" alt="download-resume" loading="lazy" inverted>
-                </a>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/msalmanrafadhlih/" target="_blank" rel="noreferrer">LinkedIn</a>
-                  <a href="https://msalmanrafadhlih.github.io/redirect-pages/mygithub.html" target="_blank" rel="noreferrer">Github</a>
-                  <a href="https://x.com/Rafadhlih" target="_blank" rel="noreferrer">Twitter X</a>
-                </div>
-          </div>
-        </div>
-      </div>
 
-    <!-- SCRIPT -->
-    <script src="script.js"></script>
-  </body>
+        <!-- TITTLE LAYER -->
+        <div class="title-layer" role="banner">
+            <div class="bg"></div>
+            <div class="stacks-inner" style="gap: 20px" alt="stacks-inner">
+                <h1>Contact</h1>
+                <h1>Contact</h1>
+                <h1>Contact</h1>
+                <h1>Contact</h1>
+                <h1>Contact</h1>
+            </div>
+        </div>
+        <section class="contact">
+            <div class="contact-item">
+                <div class="role view">
+                    <p>CONTACT ME</p>
+                    <hr />
+                </div>
+                <p>
+                    Providing a variety of creative solutions to help take your
+                    brand to the next level. Wheter you need graphic designs.
+                    Web development. UI/UX or something in between, we've got
+                    you covered with services tailored to fit your business
+                    properly.
+                </p>
+                <span
+                    >Bringin creatiive visions to life through design -
+                    Available for freelance projects and collaborations</span
+                >
+            </div>
+
+            <form action="#" method="post" class="contact-form">
+                <div class="form">
+                    <div class="form-group">
+                        <textarea
+                            type="text"
+                            id="name"
+                            name="name"
+                            maxlength="50"
+                            class="custom-input"
+                            placeholder="NAME"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            type="number"
+                            id="phone"
+                            name="phone"
+                            maxlength="50"
+                            class="custom-input"
+                            placeholder="PHONE"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            type="email"
+                            id="email"
+                            name="email"
+                            maxlength="30"
+                            class="custom-input"
+                            placeholder="EMAIL"
+                            required
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="form-group">
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="custom-input"
+                            placeholder="MESSAGE"
+                            required
+                        ></textarea>
+                        <div class="cta send" type="submit" tabindex="0">
+                            <p>Send</p>
+                            <img
+                                src="asset/img/split.svg"
+                                alt="Split"
+                                inverted
+                            />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- MENU LAYER -->
+        <div id="menu" class="menu">
+            <!-- MENU TOP -->
+            <nav class="top">
+                <a id="hamburger-menu" tabindex="0">X Close</a>
+                <img
+                    src="asset/img/Logo.svg"
+                    class="logo"
+                    height="15"
+                    alt="logo"
+                    inverted
+                    loading="lazy"
+                />
+                <a href="#contact">Get in touch</a>
+            </nav>
+            <!-- MENU MID -->
+            <div class="mid">
+                <div class="mid-item">
+                    <div class="nav">
+                        <a href="index.html">HOMe`</a>
+                        <a href="project.html">PROJe`CT</a>
+                        <a href="about.html">a`BOUT</a>
+                        <a href="contact.html" tabindex="-1" disabled
+                            >CONTa`CT</a
+                        >
+                    </div>
+                    <div class="theme">
+                        <p>Theme:</p>
+                        <img
+                            id="theme"
+                            role="button"
+                            tabindex="0"
+                            src="asset/img/moon.svg"
+                            loading="lazy"
+                            alt="Dark theme btn"
+                        />
+                    </div>
+                </div>
+                <div class="mid-img">
+                    <img
+                        src="asset/img/menu/IMG1.svg"
+                        loading="lazy"
+                        alt="Image Menu"
+                    />
+                </div>
+            </div>
+            <div class="mid2">
+                <div class="resume"></div>
+                <div class="mid-menu"></div>
+            </div>
+            <!-- HIDDEN -->
+            <div class="menu-hidden">
+                <ul class="menu-hidden-item gap">
+                    <li class="rotate"><a href="index.html">Home</a></li>
+                    <li class="rotate"><a href="project.html">Project</a></li>
+                    <li class="rotate"><a href="about.html">About</a></li>
+                    <li class="rotate">
+                        <a href="contact.html" tabindex="-1" disabled
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+                <div class="menu-hidden-item">
+                    <div class="btm-social" role="button">
+                        <a
+                            href="https://www.linkedin.com/in/msalmanrafadhlih/"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                                src="asset/img/linkedIn.svg"
+                                width="15px"
+                                alt="LinkedIn"
+                                loading="lazy"
+                                inverted
+                        /></a>
+                    </div>
+                    <div class="btm-social" role="button">
+                        <a
+                            href="https://x.com/Rafadhlih"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                                src="asset/img/twitter x.svg"
+                                width="15px"
+                                alt="twitter"
+                                loading="lazy"
+                                inverted
+                        /></a>
+                    </div>
+                    <div class="btm-social" role="button">
+                        <a
+                            href="https://msalmanrafadhlih.github.io/redirect-pages/mygithub.html"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                                src="asset/img/github2.svg"
+                                width="15px"
+                                alt="github"
+                                loading="lazy"
+                                inverted
+                        /></a>
+                    </div>
+                    <div class="btm-social" role="button">
+                        <a
+                            href="asset/download/img12.webj"
+                            rel="noreferrer"
+                            download
+                            ><img
+                                src="asset/img/cv.svg"
+                                width="20px"
+                                alt="resume"
+                                loading="lazy"
+                                inverted
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM -->
+            <div class="bottom">
+                <div class="bottom-item">
+                    <a class="resume" href="asset/download/img12.webp" download
+                        >Download resume
+                        <img
+                            src="asset/img/link.svg"
+                            height="15px"
+                            alt="download-resume"
+                            loading="lazy"
+                            inverted
+                        />
+                    </a>
+                    <div class="social">
+                        <a
+                            href="https://www.linkedin.com/in/msalmanrafadhlih/"
+                            target="_blank"
+                            rel="noreferrer"
+                            >LinkedIn</a
+                        >
+                        <a
+                            href="https://msalmanrafadhlih.github.io/redirect-pages/mygithub.html"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Github</a
+                        >
+                        <a
+                            href="https://x.com/Rafadhlih"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Twitter X</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="script.js"></script>
+    </body>
 </html>
